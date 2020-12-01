@@ -1,7 +1,7 @@
 import * as express from 'express';
 import * as passport from 'passport';
 
-import attractionRouter from '../../../server';
+import attractionRouter from '../../../routes';
 
 
 
