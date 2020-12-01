@@ -3,7 +3,7 @@ import * as path from 'path';
 import * as passport from 'passport';
 
 
-import routes from './routes';
+import apiRouter from './routes';
 
 
 
@@ -15,7 +15,7 @@ app.use(express.static('public'))
 app.use(express.json());
 app.use(passport.initialize());
 
-router.use(routes);
+router.use('/api', apiRouter);
 
 
 app.get('*', (req, res) => {
