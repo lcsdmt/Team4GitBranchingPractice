@@ -9,14 +9,14 @@ import apiRouter from './routes';
 
 const app = express();
 
-const router = express.Router();
 
-app.use(express.static('public'))
+
+
 app.use(express.json());
 app.use(passport.initialize());
 
-router.use('/api', apiRouter);
-
+app.use(apiRouter);
+app.use(express.static('public'))
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/index.html'))
