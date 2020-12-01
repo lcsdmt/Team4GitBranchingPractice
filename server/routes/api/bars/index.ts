@@ -1,7 +1,7 @@
 import * as express from 'express';
 import * as passport from 'passport';
 
-import barRouter from '../..'
+import barRouter from '../../../routes'
 
 
 

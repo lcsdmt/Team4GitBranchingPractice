@@ -1,7 +1,7 @@
 import * as express from 'express';
 import * as passport from 'passport';
 
-import restaurantRouter from '../..';
+import restaurantRouter from '../../../routes';
 
 
 
