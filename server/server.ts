@@ -9,6 +9,7 @@ import routes from './routes';
 
 const app = express();
 
+const router = express.Router();
 
 ;
 app.use(express.static('public'))
