@@ -3,6 +3,7 @@ import config from '../config'
 import Restaurants from './restaurants';
 import Bars from './bars';
 import Attractions from './attractions'
+import RestaurantTags from './restauranttags'
 
 export const pool = mysql.createPool(config.mysql);
 
@@ -17,5 +18,6 @@ export const Query = (query: string, values?: Array<string | number>) => {
 export default {
  Restaurants,
   Bars,
-  Attractions
+  Attractions,
+  RestaurantTags
 };
